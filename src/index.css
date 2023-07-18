@@ -1,0 +1,298 @@
+:root{
+
+  /* Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`. */
+
+  /* primary colors */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Transparent backgrounds */
+  --light-red-trans: hsla(0, 100%, 67%, 0.1);
+  --orangey-yellow-trans: hsla(39, 100%, 56%, 0.1);
+  --green-teal-trans: hsla(166, 100%, 37%, 0.1);
+  --cobalt-blue-trans: hsla(234, 85%, 45%, 0.1);
+
+
+  /* Gradients */
+
+  /* background gradients */
+
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+
+  /* circle gradients */
+
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral colors*/
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+
+  font-size: 18px;
+  
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+body{
+  font-family: 'Hanken Grotesk', sans-serif;
+  background-color: var(--white)
+}
+
+#root {
+  /* border: 2px solid green; */
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  background-color: var(--white);
+  width: 500px;
+  height: 370px;
+  margin: 0px auto;
+  border-radius: 20px;
+  /* border: 1px solid black; */
+  display: flex;
+  box-shadow: 10px 10px 10px var(--pale-blue);
+}
+
+.results-container{
+  color: white;
+  width: 50%;
+  height: 100%;
+  /* border: 2px solid brown; */
+  border-radius: 15px;
+  text-align: center;
+  background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue))
+}
+
+.results-content{
+  /* border: 2px solid green; */
+  margin: 5px;
+  height: 90%;
+}
+
+h4{
+  color: var(--light-lavender);
+  /* border: 2px solid red; */
+}
+
+.results-content p{
+  color: var(--light-lavender);
+}
+
+.marks{
+  height: 120px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  column-gap: 0px;
+  margin: 5px auto;
+  border-radius: 50%;
+  position: relative;
+  background-image: linear-gradient(var(--violet-blue), var(--persian-blue))
+}
+
+.marks p{
+  color: var(--light-lavender);
+  position: relative;
+  top: -5px;
+  /* border: 1px solid red; */
+  font-size: 0.6rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.marks span{
+  color: var(--white);
+  display: block;
+  /* margin-bottom: 5px; */
+  /* border: 1px solid yellow; */
+  font-size: 50px;
+  padding: 0;
+}
+
+
+
+.results-content > p{
+  margin: auto 20px;
+  margin-bottom: 40px;
+  font-size: 0.8rem;
+  /* border: 2px solid blue; */
+}
+
+/* h2{
+  border: 1px solid green;
+} */
+
+.summary-container{
+  width: 50%;
+  height: 100%;
+}
+
+.summary-content{
+  margin: 15px;
+  /* border: 2px solid green; */
+  height: 90%;
+}
+
+.summary-content h4{
+  color: black;
+}
+
+.summary-content article{
+  /* border: 2px solid blue; */
+  margin: 5px 0;
+  height: 40px;
+  background-color:var(--light-red-trans);
+  border-radius: 5px;
+}
+
+.summary-content .reaction-article{
+  background-color: var(--light-red-trans);
+}
+
+.summary-content .memory-article{
+  background-color: var(--orangey-yellow-trans);
+}
+
+.summary-content .verbal-article{
+  background-color: var(--green-teal-trans);
+}
+
+.summary-content .visual-article{
+  background-color: var(--cobalt-blue-trans);
+}
+
+.categories article span{
+  margin-top: 10px;
+  /* border: 1px solid green; */
+  margin-left: auto;
+}
+
+.categories button{
+  display: block;
+  color: var(--white);
+  background-color: var(--dark-gray-blue);
+  margin-top: 25px;
+  width: 100%;
+  height: 50px;
+  border-radius: 30px/30px;
+  border: none;
+}
+
+.categories .wrapper{
+  display: flex;
+  /* border: 1px solid black; */
+  align-items: center;
+  margin: 10px;
+}
+
+.categories p{
+  margin: 0 5px;
+  margin-top: 10px;
+  /* border: 1px solid red; */
+  /* width: 75%; */
+}
+
+.categories .reaction{
+  color:var(--light-red)
+}
+
+.categories .memory{
+  color:var(--orangey-yellow)
+}
+
+.categories .verbal{
+  color:var(--green-teal)
+}
+
+.categories .visual{
+  color:var(--cobalt-blue)
+}
+
+.categories img{
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 10px;
+  height: 20px;
+  /* border: 1px solid black; */
+}
+
+@media screen and (max-width: 600px) {
+
+  body{
+    background-color: green;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  #root {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    display: block;
+    margin-left: 0px;
+  }
+
+  .container{
+    
+    /* width: 500px; */
+    height: auto;
+    margin: 0px;
+    /* border: 1px solid black; */
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .results-container{
+    /* color: white; */
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    /* border: 2px solid brown; */
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+    background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue))
+  }
+
+  .summary-container{
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+    height: auto;
+    /* display: flex;
+    justify-content: center; */
+    /* border: 2px solid green; */
+  }
+
+  .attribution{
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+    
+  }
+  
+
+}
+
+
+
